@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "socket.io": "~0.7.9",
-    "express": "~2.4.4"
+    "express": "~2.4.4",
+    "request": "~2.1.0",
+    "sax": "~0.2.3"
   },
   "devDependencies": {}
 }
