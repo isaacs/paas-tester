@@ -3,8 +3,10 @@ fs = require('fs')
 
 server = http.createServer (req, res) ->
   res.writeHead(200, {"content-type": "text/plain"})
-  fs.createReadStream(__filename).pipe(res)
-  # res.end("hello with coffee")
+  s = fs.createReadStream(__filename)
+  s.pipe(res, { end: false })
+  s.on 'end', ->
+    fs.createReadStream(__dirname + '/package.json').pipe(res)
 
 server.listen(80)
 
