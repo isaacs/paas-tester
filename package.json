@@ -1,7 +1,11 @@
-{ "name": "hello-coffee"
-, "version": "1.2.4"
-, "dependencies":
-  { "express": "2.0"
-  , "coffee-script": "1.1" }
-, "scripts":
-  { "start": "coffee server.coffee" } }
+{
+  "name": "my-program",
+  "version": "1.2.3",
+  "dependencies": {
+    "express": "2.0",
+    "coffee-script": "1.1"
+  },
+  "scripts": {
+    "start": "coffee server.coffee"
+  }
+}
