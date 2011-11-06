@@ -1,8 +1,11 @@
-http = require 'http'
-http.createServer (req, res) ->
-  res.sendHeader 200, {"content-type": "text/plain"}
-  res.sendBody 'served with coffee'
-  res.finish()
-.listen("0.0.0.0", 80)
+http = require('http')
+fs = require('fs')
 
-console.log 'server running'
+server = http.createServer (req, res) ->
+  res.sendHeader(200, {"content-type": "text/plain"})
+  # fs.createReadStream(__filename).pipe(res)
+  res.end("hello with coffee")
+
+server.listen(80)
+
+console.log('serving with coffee')
