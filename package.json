@@ -1,19 +1,7 @@
-{
-  "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
-  "name": "hello-server",
-  "description": "Now with socket.io!",
-  "version": "0.0.0",
-  "repository": {
-    "url": ""
-  },
-  "engines": {
-    "node": "~v0.4.11"
-  },
-  "dependencies": {
-    "socket.io": "~0.7.9",
-    "express": "~2.4.4",
-    "request": "~2.1.0",
-    "sax": "~0.2.3"
-  },
-  "devDependencies": {}
-}
+{ "name": "hello-coffee"
+, "version": "1.2.4"
+, "dependencies":
+  { "express": "2.0"
+  , "coffee-script": "1.1" }
+, "scripts":
+  { "start": "coffee server.coffee" } }
