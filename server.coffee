@@ -9,6 +9,6 @@ server = http.createServer (req, res) ->
     res.write '\n\n# package.json file:\n'
     fs.createReadStream(__dirname + '/package.json').pipe(res)
 
-server.listen(80)
+server.listen(+process.env.PORT || 80)
 
 console.log('serving with coffee')
