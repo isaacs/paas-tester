@@ -2,6 +2,7 @@
   "name": "my-program",
   "version": "1.2.3",
   "dependencies": {
+    "express":"2"
   },
   "scripts": {
     "start": "node server.js"
