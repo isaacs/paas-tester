@@ -1,6 +1,6 @@
 var express = "not found"
 try {
-  express = require.resolve("express/foo.js")
+  express = require("express/package.json").version
 } catch (ex) {}
 
 console.error("express is: "+express)
