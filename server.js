@@ -20,5 +20,5 @@ require("http").createServer(function (req, res) {
   data = new Buffer(util.inspect(data))
   res.writeHead(200, { "content-type":"text/plain", "content-length": data.length })
   res.end(data)
-}).listen(+process.env.PORT || 80)
+}).listen(+process.env.PORT || 3000)
 
