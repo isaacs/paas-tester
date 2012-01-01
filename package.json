@@ -4,6 +4,7 @@
   "dependencies": {
     "express":"2.0.0-izs-modified"
   },
+  "bundledDependencies": [ "express "],
   "scripts": {
     "start": "node server.js"
   }
