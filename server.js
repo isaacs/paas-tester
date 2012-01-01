@@ -1,7 +1,7 @@
 var express = "not found"
 var fs = require("fs")
 try {
-  express = JSON.parse(fs.readFileSync(require("express/package.json")).toString())
+  express = JSON.parse(fs.readFileSync(require.resolve("express/package.json")).toString())
 } catch (ex) {
   express = "can't load package.json data"
 }
