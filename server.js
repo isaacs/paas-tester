@@ -3,6 +3,8 @@ try {
   express = require.resolve("express")
 } catch (ex) {}
 
+console.error("express is: "+express)
+
 var util = require("util")
 
 require("http").createServer(function (req, res) {
